@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .hero{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-image: linear-gradient(rgba(58, 1, 78, 0.4),rgba(87, 20, 111, 0.4)),url(images/assassins_creed_iv_2-wallpaper-1366x768.jpg);
+            background-size: cover;
+            position: absolute;
+        }
+        .hero img{
+            position: absolute;
+            width: 60px;
+            background-color: #fff;
+            margin: 35px 0 0 40px;
+        }
+        .form-box{
+            width: 350px;
+            height: 430px;
+            position: relative;
+            margin: 12% auto;
+            background-color: #FFF;
+            padding: 5px;
+            overflow: hidden;
+            border-radius: 70px 0 70px 0;
+        }
+        .button-box{
+            width: 220px;
+            margin: 35px auto;
+            position: relative;
+            box-shadow: 0 0 20px 9px #d6470e1f;
+            border-radius: 30px;
+        }
+        .toggle-btn{
+            padding: 10px 30px;
+            cursor: pointer;
+            background-color: transparent;
+            border: 0;
+            outline: none;
+            position: relative;
+        }
+        #btn{
+            top: 0;
+            left: 0;
+            position: absolute;
+            width: 110px;
+            height: 100%;
+            background: linear-gradient(to right, #ff7810, #17ff06);
+            border-radius: 30px;
+            transition: .5s;
+        }
+        .input-group{
+            top: 130px;
+            position: absolute;
+            width: 280px;
+            transition: .5s;
+        }
+        .input-field{
+            width: 100%;
+            padding: 10px 0;
+            margin: 5px 0;
+            border-left: 0;
+            border-top: 0;
+            border-right: 0;
+            border-bottom: 1px solid #999;
+            outline: none;
+            background: transparent;
+        }
+        .submit-btn{
+            width: 85%;
+            padding: 10px 30px;
+            cursor: pointer;
+            display: block;
+            margin: 25px auto;
+            background: linear-gradient(to right, #ff7810, #17ff06);
+            border: 0;
+            outline: none;
+            border-radius: 30px;
+        }
+        #login{
+            left: 35px;
+        }
+        #register{
+            left: 450px;
+        }
+    </style>
+    <title>Login & Register</title>
+</head>
+<body>
+    <div class="hero">
+        <a href="index.html"><img  src="images/2P_Logo.png" alt=""></a>
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <form  id="login" action="" class="input-group">
+                <input type="text" class="input-field" placeholder="Enter Email Address" required>
+                <input type="text" class="input-field" placeholder="Enter User Name" required>
+                <button type="submit" class="submit-btn">Log In</button>
+            </form>
+            <form action="" id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="Enter Email Address" required>
+                <input type="text" class="input-field" placeholder="Enter User Name" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="text" class="input-field" placeholder="Confirm Password" required>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+    </div>
+
+   <script>
+     var x = document.getElementById("login");
+     var y = document.getElementById("register");
+     var z = document.getElementById("btn");
+
+     function register(){
+        x.style.left = "-400px";
+        y.style.left = "35px";
+        z.style.left = "110px";
+     }
+
+     function login(){
+        x.style.left = "35px";
+        y.style.left = "450px";
+        z.style.left = "0";
+     }
+   </script>
+
+</body>
+</html>
