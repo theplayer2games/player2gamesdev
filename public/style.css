@@ -382,11 +382,11 @@ form button{
     cursor: pointer;
 }
 
-form button .fas{
+form button .kenk{
     font-size: 16px;
     color: #ccc;
 }
-.social-icons .fab{
+.social-icons .ss{
     width: 40px;
     height: 40px;
     border-radius: 50%;
