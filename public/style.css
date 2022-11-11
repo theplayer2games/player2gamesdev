@@ -326,6 +326,11 @@ footer{
     align-items: flex-start;
     justify-content: space-between;
 }
+
+.ABC{
+    width: 80px;
+    max-width: 30px;
+}
 .col{
     flex-basis: 25%;
     padding: 10px;
