@@ -328,6 +328,9 @@ footer{
     flex-basis: 25%;
     padding: 10px;
 }
+.col:nth-child(2),.col:nth-child(3){
+    flex-basis: 15%;
+}
 
 .col h3{
     width: fit-content;
@@ -378,5 +381,18 @@ form button{
 }
 
 form button .fas{
-    
+    font-size: 16px;
+    color: #ccc;
+}
+.social-icons .fab{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
 }
