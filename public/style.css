@@ -302,7 +302,9 @@ h1{
     text-align: center;
 }
 /*---------------------------------Footer section------------------------------------------*/
-
+body{
+    background: #eef8ff  ;
+}
 footer{
     width: 100%;
     position: absolute;
