@@ -4,21 +4,157 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Browse | Player2Games</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e0374b34cb.js" crossorigin="anonymous"></script>
+    <title>Browse | Player2Games</title>
 </head>
 <body>
-    <div class="header">
-        <a href="index.html"><img  src="images/2P_Logo.png" alt=""></a>
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <!-- <li><a href="">DISCOVER</a></li> -->
-            <li><a href="browse.html">BROWSE</a></li>
-            <li><a href="news.html">NEWS</a></li>
-            <li><a href="">WISHLIST</a></li>
-            <li><a href="log_reg.html"><i class="fa-solid fa-user "></i></a></li>
-        </ul>
-    </div>
-    
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/2P_Logo.png" alt=""></a>
+        </div>
+
+        <label id="menu_bar"><i class="fa-solid fa-bars"></i></label>
+
+        <nav class="navbar" id="nav_bar">
+            <ul>
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="browse.html">BROWSE</a></li>
+                  <li><a href="#">NEWS</a></li>
+                  <li><a href="#">USER</a>
+                      <ul>
+                        <li onclick="butoon()" ><a href="#">SIGN IN</a></li>
+                        <li><a href="#">WISHLIST</a></li>
+                      </ul>
+                  </li>
+            </ul>
+        </nav>
+       <a href="#" class="cart"><i class="fa-sharp fa-solid fa-cart-shopping" style="color: #fff; font-size: 19px;"></i></a>
+    </header>
+
+
+<!-----------------------------------------------------User Sign Pages------------------------------------------------>
+<div class="container col-md-4 con-sm-12 pt-xl-5 px-4 bg-dark" id="sign_page" style="height: auto;" ondblclick="loginHide()">
+              <h2 style="margin-bottom: 30px; text-align:center; color:rgb(113, 234, 20);" id="signIn-header">SIGN IN</h2>
+              <form action="" class="row g-3" id="sign-in">
+                 <div class="col-md-12">
+                   <label for="" class="form-label" style="color: #fff;">Email Address </label>
+                   <input type="text" class="form-control bg-dark border-white text-muted" id="name">
+                 </div>
+                 <div class="col-md-12">
+                   <label for="" class="form-label"style="color: #fff;">User Name </label>
+                   <input type="text" class="form-control bg-dark border-white text-muted" id="name">
+                 </div>
+                 <div class="col-md-12">
+                   <label for="" class="form-label" style="color: #fff;">Password </label>
+                   <input type="text" class="form-control bg-dark border-white text-muted" id="name">
+                 </div>
+                   <button class="btn btn-warning">LOGIN</button>
+                   <p style="color: #fff; text-align: center; cursor: pointer;" onclick="signUpForm()">sign up</p>
+              </form>
+
+               <h2 style=" text-align:center; color: rgb(228, 221, 10);"id="signUp-header">SIGN UP</h2>
+                           <form action="" class="row g-3" id="sign-up">
+                           <div class="col-md-12">
+                               <label for="" class="form-label" style="color: #fff;" >Select Country </label>
+                               <select class="form-select bg-dark border-white text-muted">
+                                   <option value="">Select Country</option>
+                                   <option value="">Sri Lanka</option>
+                                   <option value="">India</option>
+                                   <option value="">America</option>
+                                   <option value="">Canda</option>
+                                   <option value="">Japan</option>
+                                   <option value="">China</option>
+                               </select>
+                           </div>
+                           <div class="col-md-12">
+                               <label for="" class="form-label" style="color: #fff;" >First Name </label>
+                               <input type="text" class="form-control bg-dark border-white text-muted" id="name">
+                           </div>
+                           <div class="col-md-12">
+                               <label for="" class="form-label" style="color: #fff;" >Last Name </label>
+                               <input type="text" class="form-control bg-dark border-white text-muted" id="name">
+                           </div>
+                           <div class="col-md-12">
+                               <label for="" class="form-label" style="color: #fff;" >Display Name </label>
+                               <input type="text" class="form-control bg-dark border-white text-muted" id="name">
+                           </div>
+                           <!---
+                           <div class="col-md-12">
+                               <label for="" class="form-label" style="color: #fff;" >Profile Image :</label> 
+                               <input type="file"  class="form-control bg-dark border-white" accept="image/png, image/jpeg, image/jpg" name="game_image">    
+                           </div>-->
+                           <div class="col-md-12">
+                               <label for="" class="form-label" style="color: #fff;"  >Email Address </label>
+                               <input type="text" class="form-control bg-dark border-white text-muted" id="name">    
+                           </div>
+                           <div class="col-md-12">
+                               <label for="" class="form-label" style="color: #fff;" >Password :</label>
+                               <input type="text" class="form-control bg-dark border-white text-muted" id="name">
+                           </div>             
+                              <button class="btn btn-warning" >REGISTER</button>
+                              <p style="color: #fff; text-align: center; cursor: pointer;"onclick="signInForm()">sign in</p>
+                       </form>
+                   
+                         </div>
+
+       <!------------------------------------------------------------------------------------------------------------------------->
+     
+  <div class="search-box">
+     <div class="search-bar">
+     <form action="" method="POST">
+        <input type="text" name="search" placeholder="search">
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+     </form>
+     </div>
+  </div>
+
+  <script>
+        /*-----------header------------*/
+  var nav_bar = document.getElementById('nav_bar');
+  var menu_bar = document.getElementById('menu_bar');
+  
+  menu_bar.onclick = function(){
+      if(nav_bar.style.display == "none"){
+          nav_bar.style.display = "block";
+      }
+      else{
+          nav_bar.style.display = "none";
+      }
+  }
+
+
+  
+
+
+var signpage = document.getElementById('sign_page');
+function butoon(){
+    signpage.style.top = "53%";
+}
+function loginHide(){
+    signpage.style.top = "-50%";
+}
+
+
+var signIn = document.getElementById('sign-in');
+var signUp = document.getElementById('sign-up');
+var signInheader = document.getElementById('signIn-header');
+var signUpheader = document.getElementById('signUp-header');
+
+function signUpForm(){
+    signInheader.style.display = "none";
+    signIn.style.display = "none";
+    signUp.style.display = "block";
+    signUpheader.style.display = "block";
+}
+
+function signInForm(){
+    signUpheader.style.display = "none";
+    signUp.style.display = "none";
+    signIn.style.display = "block";
+    signInheader.style.display = "block";
+}
+  </script>
 </body>
 </html>
