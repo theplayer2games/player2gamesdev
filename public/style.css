@@ -405,7 +405,7 @@ font-size: 15px;
 }
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:560px) {
     .box-container{
         grid-template-columns: repeat(auto-fit, 200px);
     }
