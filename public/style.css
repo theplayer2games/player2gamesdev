@@ -410,9 +410,9 @@ font-size: 15px;
         grid-template-columns: repeat(auto-fit, 200px);
     }
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 390px) {
     .box-container{
-        grid-template-columns: repeat(auto-fit, 200px) ;
+        grid-template-columns: repeat(auto-fit, 190px) ;
         width: 100%;
         gap: 5px 5px;
         }
