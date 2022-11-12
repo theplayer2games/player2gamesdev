@@ -250,6 +250,9 @@ header label{
     }
 }
 @media screen and (max-width:440px){
+    .content-wrapper{
+        margin-bottom: 20px;
+    }
     h1{
         font-size: 2rem;
         padding-top: 20px;
@@ -261,7 +264,6 @@ header label{
     .caracter{
         width: 250px;
         height: 250px;
-        margin-bottom: 20px;
     }
     .caracter::after{
         content: '';
