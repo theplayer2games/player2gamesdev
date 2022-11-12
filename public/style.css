@@ -315,12 +315,12 @@ header label{
     color: rgb(10, 12, 137);
 }
 /*--------------responsive--------------------*/
-@media screen and (max-width:440px){
+@media screen and (max-width:480px){
    .games-image-slider{
        height: 650px;
    }
    .swiper{
-     width: 80%;
+     width: 90%;
    }
    .swiper-slide img{
      height: 450px;
@@ -330,6 +330,14 @@ header label{
    }
 }
 
+@media screen and (max-width: 768px) {
+    .swiper{
+        width: 90%;
+    }
+    .swiper-slide p{
+        display: none;
+    }
+}
 
 /*----------------------------free games section-----------------------------------*/
 
@@ -381,7 +389,7 @@ header label{
 /* ------------responsive design------------------*/
 @media screen and (max-width:991px){
 .box-container{
-grid-template-columns: repeat(auto-fit, 200px) ;
+grid-template-columns: repeat(auto-fit, 250px) ;
 width: 100%;
 gap: 5px 5px;
 }
@@ -395,6 +403,12 @@ margin: 10px 0;
 .box-container .boxx .pricee{
 font-size: 15px;
 }
+}
+
+@media screen and (max-width:480px) {
+    .box-container{
+        grid-template-columns: repeat(auto-fit, 200px);
+    }
 }
          /*------------------------------------------------------------------------------
 /*------------------------------------------------------------------------/*
