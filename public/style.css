@@ -207,7 +207,7 @@ header label{
       .content-desc p{
         text-align: center;
         width: fit-content;
-        font-size: 2rem;
+        font-size: 1.5rem;
         line-height: 2.5rem;
         
       }
@@ -236,7 +236,7 @@ header label{
         font-size: 2.5rem;
     }
     .content-desc p{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .caracter{
         width: 300px;
@@ -255,13 +255,13 @@ header label{
         padding-top: 20px;
     }
     .content-desc p{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         margin: 0 5px;
-        color: #ffaf10;
     }
     .caracter{
         width: 250px;
         height: 250px;
+        margin-bottom: 20px;
     }
     .caracter::after{
         content: '';
@@ -381,7 +381,7 @@ header label{
 /* ------------responsive design------------------*/
 @media screen and (max-width:991px){
 .box-container{
-grid-template-columns: repeat(auto-fit, 250px) ;
+grid-template-columns: repeat(auto-fit, 200px) ;
 width: 100%;
 gap: 5px 5px;
 }
