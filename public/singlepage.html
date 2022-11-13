@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e0374b34cb.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        table td{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/2P_Logo.png" alt=""></a>
+        </div>
+
+        <label id="menu_bar"><i class="fa-solid fa-bars"></i></label>
+
+        <nav class="navbar" id="nav_bar">
+            <ul>
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="browse.html">BROWSE</a></li>
+                  <li><a href="#">NEWS</a></li>
+                  <li><a href="#">USER</a>
+                      <ul>
+                        <li onclick="butoon()" ><a href="#">SIGN IN</a></li>
+                        <li><a href="#">WISHLIST</a></li>
+                      </ul>
+                  </li>
+            </ul>
+        </nav>
+       <a href="#" class="cart"><i class="fa-sharp fa-solid fa-cart-shopping" style="color: #fff; font-size: 19px;"></i></a>
+    </header>
+
+
+<!-----------------------------------------------------User Sign Pages------------------------------------------------>
+<div class="container col-md-4 con-sm-12 pt-xl-5 px-4 bg-dark" id="sign_page" style="height: auto;" ondblclick="loginHide()">
+    <h2 style="margin-bottom: 30px; text-align:center; color:rgb(113, 234, 20);" id="signIn-header">SIGN IN</h2>
+    <form action="" class="row g-3" id="sign-in">
+       <div class="col-md-12">
+         <label for="" class="form-label" style="color: #fff;">Email Address </label>
+         <input type="text" class="form-control bg-dark border-white text-muted" id="name">
+       </div>
+       <div class="col-md-12">
+         <label for="" class="form-label"style="color: #fff;">User Name </label>
+         <input type="text" class="form-control bg-dark border-white text-muted" id="name">
+       </div>
+       <div class="col-md-12">
+         <label for="" class="form-label" style="color: #fff;">Password </label>
+         <input type="text" class="form-control bg-dark border-white text-muted" id="name">
+       </div>
+         <button class="btn btn-warning">LOGIN</button>
+         <p style="color: #fff; text-align: center; cursor: pointer;" onclick="signUpForm()">sign up</p>
+    </form>
+
+     <h2 style=" text-align:center; color: rgb(228, 221, 10);"id="signUp-header">SIGN UP</h2>
+                 <form action="" class="row g-3" id="sign-up">
+                 <div class="col-md-12">
+                     <label for="" class="form-label" style="color: #fff;" >Select Country </label>
+                     <select class="form-select bg-dark border-white text-muted">
+                         <option value="">Select Country</option>
+                         <option value="">Sri Lanka</option>
+                         <option value="">India</option>
+                         <option value="">America</option>
+                         <option value="">Canda</option>
+                         <option value="">Japan</option>
+                         <option value="">China</option>
+                     </select>
+                 </div>
+                 <div class="col-md-12">
+                     <label for="" class="form-label" style="color: #fff;" >First Name </label>
+                     <input type="text" class="form-control bg-dark border-white text-muted" id="name">
+                 </div>
+                 <div class="col-md-12">
+                     <label for="" class="form-label" style="color: #fff;" >Last Name </label>
+                     <input type="text" class="form-control bg-dark border-white text-muted" id="name">
+                 </div>
+                 <div class="col-md-12">
+                     <label for="" class="form-label" style="color: #fff;" >Display Name </label>
+                     <input type="text" class="form-control bg-dark border-white text-muted" id="name">
+                 </div>
+                 <!---
+                 <div class="col-md-12">
+                     <label for="" class="form-label" style="color: #fff;" >Profile Image :</label> 
+                     <input type="file"  class="form-control bg-dark border-white" accept="image/png, image/jpeg, image/jpg" name="game_image">    
+                 </div>-->
+                 <div class="col-md-12">
+                     <label for="" class="form-label" style="color: #fff;"  >Email Address </label>
+                     <input type="text" class="form-control bg-dark border-white text-muted" id="name">    
+                 </div>
+                 <div class="col-md-12">
+                     <label for="" class="form-label" style="color: #fff;" >Password :</label>
+                     <input type="text" class="form-control bg-dark border-white text-muted" id="name">
+                 </div>             
+                    <button class="btn btn-warning" >REGISTER</button>
+                    <p style="color: #fff; text-align: center; cursor: pointer;"onclick="signInForm()">sign in</p>
+             </form>
+         
+               </div>
+
+<!------------------------------------------------------------------------------------------------------------------------->
+
+<div class="single-page">
+    <div class="container">
+        <p class="game_name" style=" text-align: center; margin: 25px; font-size: 30px; text-transform: uppercase; color: #2fe717; font-weight: 600;">DYING LIGHT 2</p>
+        <hr style="background-color: red; height: 3px;">
+        <div class="row gy-3 gx-2">
+            <div class="col-12 col-md-6 col-lg-6">
+                    <img class="img-fluid d-block mx-auto" src="images/free games/Dying-Light-2-Stay-Human-Cover-Art.jpg" alt="" >
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-6 bg-white rounded" >
+                    <p class="" style="text-align: center; color: #FF9600; font-size: 42px; font-family: 'Montserrat', sans-serif; font-weight: 1000; font-size: 30px; margin: 10px 0;">$15.23</p>
+                    <hr>
+                    <h5 style=" text-transform: uppercase; text-align: center;">DYING LIGHT 2 WILL BE AVAILABLE ON 23 OCTOBER 2020</h5>
+                    <div class="table-responsive col-12 col-md-6 col-lg-6 mx-auto my-5">
+                        <table class="table align-middle">
+                          <thead>
+                            <tr class="align-middle">
+                              <td style="font-weight: bold;">Developer</td>
+                              <td style="text-align: right;">Epic</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr  class="align-middle">
+                                <td style="font-weight: bold;">Publisher</td>
+                                <td style="text-align: right;">Epic</td>
+                            </tr>
+                            <tr  class="align-middle">
+                                <td style="font-weight: bold;">Release Date</td>
+                                <td style="text-align: right;">23 October 2020</td>
+                            </tr>
+                            <tr  class="align-middle">
+                              <td style="font-weight: bold;">Platform</td>
+                              <td style="text-align: right;">Steam</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                        <div class="row mx-auto my-5 col-12 col-md-9 col-lg-9">
+                            <div class="col-4 col-lg-4 col-md-4">
+                                <div class="card">
+                                   <img src="images/free games/New-Tales-From-The-Borderlands-Buy-Cheap-Play-Cheap-Cover-Art.jpg" alt="" style="height: 130px ;">
+                                </div>
+                                </div>
+                                <div class="col-4 col-lg-4 col-md-4">
+                                    <div class="card">
+                                       <img src="images/free games/Scorn-Buy-Cheap-Play-Cheap-Cover-Art.jpg" alt="" style="height: 130px ;">
+                                    </div>
+                                    </div>
+                                    <div class="col-4 col-lg-4 col-md-4">
+                                        <div class="card">
+                                           <img src="images/free games/FIFA-23-Buy-Cheap-Play-Cheap-Cover-Art.jpg" alt="" style="height: 130px ;">
+                                        </div>
+                        </div>
+                        </div>
+                        <div class="d-grid gap-3 col-12 col-md-8 col-lg-8 mx-auto">
+                            <button class="btn btn-warning" type="button">ADD TO CART</button>
+                            <button class="btn btn-info mb-2" type="button">ADD TO WISHLIST</button>
+                          </div>
+                  </div>
+            </div>
+
+
+            <div class="row gx-2 mt-4 mb-5" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+               <div class="col-lg-12 col-12 col-md-12 rounded bg-white px-3">
+                <h3 class="details-header m-2"style="   text-align: center; color:#fec53a; font-size: 20px;">INFORMATION</h3>
+                <hr>
+                <h4>Get your Dying Light 2 Stay Human-<span class="bold-text" style="color: red;">Steam Online Activation</span> with <span class="bold-text">player2games.tech.</span></h4> 
+                <p class="mt-4" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Dying Light 2 Stay Human Game is an action, adventure, and role-playing Game developed and published by Techland.
+                     It is the second installment of the Dying Light series. The developers released the Game on February 
+                    4, 2022, for Nintendo Switch, PlayStation 4, PlayStation 5, Microsoft Windows, Xbox One, and Xbox Series X/S.</p>
+                <div class="row">
+                    <h5 class="my-3" align="center">What are the System Requirements?</h5>
+                    <div class="col-12 col-lg-6 col-md-6">
+                        <div class="table-responsive col-12  col-md-10 col-lg-10 mx-auto my-2">
+                            <table class="table align-middle table-borderless">
+                               <thead>
+                                  <td colspan="2" style="font-weight: bold;" align="center">minimum System Requirements</td>
+                               </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Processor</td>
+                                  <td>Intel Core i3-9100 / AMD Ryzen 3 2300X</td>
+                                </tr>
+                              </tbody>
+                              <tbody>
+                                <tr>
+                                    <td>CPU</td>
+                                    <td>NVIDIA GTX 1050 Ti / AMD Radeon RX 560</td>
+                                </tr>
+                                <tr>
+                                    <td>Memory</td>
+                                    <td>8 GB</td>
+                                </tr>
+                                <tr>
+                                  <td>Storage</td>
+                                  <td>16 GB</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                        </div>      
+                    </div>  
+                    
+                    <div class="col-12 col-lg-6 col-md-6">
+                        <div class="table-responsive col-12  col-md-10 col-lg-10 mx-auto my-2">
+                            <table class="table align-middle table-borderless">
+                               <thead>
+                                    <td colspan="2" align="center" style="font-weight: bold;">minimum System Requirements</td>
+                               </thead>
+                              <tbody>
+                                <tr>
+                                  <td>Processor</td>
+                                  <td>AMD Ryzen 5 3600X / Intel i5-8600K</td>
+                                </tr>
+                              </tbody>
+                              <tbody>
+                                <tr>
+                                    <td>CPU</td>
+                                    <td>NVIDIA GeForce RTX 2060 6GB / AMD RX Vega 56</td>
+                                </tr>
+                                <tr>
+                                    <td>Memory</td>
+                                    <td>16 GB</td>
+                                </tr>
+                                <tr>
+                                  <td>Storage</td>
+                                  <td>60 GB</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                        </div>      
+                    </div>        
+                </div>
+              
+               </div>
+          </div>
+    </div>
+</div>  
+
+
+  <!--------------------------------Footer-------------------------------------------->
+  <footer>
+    <section>
+   <div  class="row">
+   <div  class="col">
+       <img src="abc.png" class="ABC">
+       <p>This is our diploma level project .you can use this app for download games with in per second. 
+         all of the lateset games are here in one web taaaaaadaaaaaaaa!!!!!!! </p>
+   </div>
+   <div  class="col"> 
+       <h3>Office <div class="underline"><span></span></div></h3>
+       <p>Kundasale road</p>
+       <p>Whitefield, Bangalore</p>
+       <p>No 21/B,Arangala Road,Naththarampotha</p>
+       <p class="email-id">nim.mandakini@gmail.com</p>
+       <h4>077-5795372</h4>
+       <h4>070-4373870</h4>
+   </div>
+   <div  class="col">
+       <h3>Links<div class="underline"><span></span></div></h3>
+       <ul>
+           <li> <a href="">Home</a></li>
+           <li> <a href="">Services</a></li>
+           <li> <a href="">About us</a></li>
+           <li> <a href="">Features</a></li>
+           <li> <a href="">Contacts</a></li>
+       </ul>
+   </div>
+   <div  class="col">
+       <h3>Newsletter<div class="underline"><span></span></div></h3>
+       <form>
+          `<i class="fa-solid fa-envelope"></i> 
+           <input type="email" placeholder="Enter your email"required>
+           <button type="submit"><i class=" kenk fa-sharp fa-solid fa-circle-arrow-right"></i></button>
+       </form>
+       <div class="social-icons">
+         <i class="ss fa-brands fa-square-facebook"></i>
+         <i class="ss fa-brands fa-square-instagram"></i>
+         <i class="ss fa-brands fa-square-twitter"></i>
+         <i class="ss fa-brands fa-square-whatsapp"></i>
+         
+       </div>
+   </div>
+ <hr>
+ <p class ="copyright">© 2022, Epic Games, Inc. All rights reserved. 
+   Epic, Epic Games, the Epic Games logo, Fortnite, the Fortnite logo, Unreal, Unreal Engine, the Unreal Engine logo, Unreal Tournament, and the Unreal Tournament logo are trademarks or registered trademarks of Epic Games, Inc. in the United States of America and elsewhere. Other brands or product names 
+   are the trademarks of their respective owners. Non-US transactions through 
+   Epic Games International</p>
+ </div>
+ </section>
+ </footer>
+ 
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+
+<script>
+    /*-----------header------------*/
+var nav_bar = document.getElementById('nav_bar');
+var menu_bar = document.getElementById('menu_bar');
+
+menu_bar.onclick = function(){
+  if(nav_bar.style.display == "none"){
+      nav_bar.style.display = "block";
+  }
+  else{
+      nav_bar.style.display = "none";
+  }
+}
+
+
+
+
+
+var signpage = document.getElementById('sign_page');
+function butoon(){
+signpage.style.top = "53%";
+}
+function loginHide(){
+signpage.style.top = "-50%";
+}
+
+
+var signIn = document.getElementById('sign-in');
+var signUp = document.getElementById('sign-up');
+var signInheader = document.getElementById('signIn-header');
+var signUpheader = document.getElementById('signUp-header');
+
+function signUpForm(){
+signInheader.style.display = "none";
+signIn.style.display = "none";
+signUp.style.display = "block";
+signUpheader.style.display = "block";
+}
+
+function signInForm(){
+signUpheader.style.display = "none";
+signUp.style.display = "none";
+signIn.style.display = "block";
+signInheader.style.display = "block";
+}
+</script>
+
+</body>
+</html>
